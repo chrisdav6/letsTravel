@@ -173,21 +173,47 @@
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
       <p
         class="mb-md-0">&copy; 2019, Completed by <a href="https://github.com/chrisdav6" target="_blank">Chris</a> <i class="fas fa-crow"></i></p>
-      <a href="https://github.com/chrisdav6" target="_blank" class="btn btn-outline-primary">Contact Me!</a>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Me!</button>
     </div>
   </footer>
 
-  <!-- Site Text
-
-    
-    
-    Card 5
-    Parliament Hill
-    Parliament Hill, colloquially known as The Hill, is an area of Crown land on the southern banks of the Ottawa River in downtown Ottawa, Ontario. Its Gothic revival suite of buildings is the home of the Parliament of Canada and has architectural elements of national symbolic importance.
-    Card 6
-    Great Wall of China
-    The Great Wall of China is a series of fortifications made of stone, brick, rammed earth, wood, and other materials, generally built to protect the Chinese states and empires against the raids and invasions.
-  -->
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModal">Contact Me!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form action="./index.html" method="get">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input type="text" class="form-control" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Your Phone Number:</label>
+              <input type="text" class="form-control" name="phone" id="phone">
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send It!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
